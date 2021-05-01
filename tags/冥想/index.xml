@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>冥想 on QianCheng Blog</title>
+    <link>https://localhost:1313/tags/%E5%86%A5%E6%83%B3/</link>
+    <description>Recent content in 冥想 on QianCheng Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/tags/%E5%86%A5%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>读书 | 《重来也不会好过》</title>
+      <link>https://localhost:1313/post/reading/2021-04-30-chonglai/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/post/reading/2021-04-30-chonglai/</guid>
+      <description>这本MIT哲学教授写的小册子Midlife: A Philosophical Guide《中年（危机）哲学指南》，中文被译作《重来也不会好过》。 作为专业背景作者的半学术类</description>
+    </item>
+    
+  </channel>
+</rss>
