@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tips on QianCheng Blog</title>
-    <link>https://localhost:1313/categories/tips/</link>
+    <link>https://qcneverrepeat.github.io/categories/tips/</link>
     <description>Recent content in tips on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://qcneverrepeat.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用Hugo从零搭建免费个人博客</title>
-      <link>https://localhost:1313/post/tips/2021-05-01-build-hugo/</link>
+      <link>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/post/tips/2021-05-01-build-hugo/</guid>
+      <guid>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</guid>
       <description>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。是新手搭建个人博客的首选。 首先需要从github release安装、</description>
     </item>
     
