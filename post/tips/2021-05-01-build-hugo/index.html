@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="用Hugo从零搭建免费个人博客" />
-    <meta property="og:title" content="用Hugo从零搭建免费个人博客" />
-    <meta property="twitter:title" content="用Hugo从零搭建免费个人博客" />
+    <meta name="title" content="Hugo&#43;Github Pages博客搭建" />
+    <meta property="og:title" content="Hugo&#43;Github Pages博客搭建" />
+    <meta property="twitter:title" content="Hugo&#43;Github Pages博客搭建" />
     
 
     
-    <meta name="description" content="钱诚, 数据研发工程师 | 这里是 钱诚 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="钱诚, 数据研发工程师 | 这里是 钱诚 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="钱诚, 数据研发工程师 | 这里是 钱诚 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="Hugo（雨果）是一个Go语言编写的网页创建框架">
+    <meta property="og:description" content="Hugo（雨果）是一个Go语言编写的网页创建框架" />
+    <meta property="twitter:description" content="Hugo（雨果）是一个Go语言编写的网页创建框架" />
     
 
     
@@ -35,7 +35,7 @@
     <meta name="keyword"  content="钱诚, qiancheng, QianCheng , 钱诚的网络日志, 钱诚的博客, QianCheng Blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>用Hugo从零搭建免费个人博客-钱诚的博客 | QianCheng Blog</title>
+    <title>Hugo&#43;Github Pages博客搭建-钱诚的博客</title>
 
     <link rel="canonical" href="/post/tips/2021-05-01-build-hugo/">
 
@@ -171,7 +171,7 @@
                         </a>
                         
                     </div>
-                    <h1>用Hugo从零搭建免费个人博客</h1>
+                    <h1>Hugo&#43;Github Pages博客搭建</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -209,19 +209,84 @@
                 </header>
                 
                 
-                <p>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。是新手搭建个人博客的首选。</p>
+                <p>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域名也可以免费使用其支持的username.github.io作为域名。二者结合可以迅速搭建起一个精致而免费的个人博客网站。</p>
 
-<p>首先需要从github release安装、配置环境变量。</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myBlog <span style="color:#8f5902;font-style:italic"># 在任意路径用cmd创建myBlog博客项目</span>
-<span style="color:#204a87">cd</span> myBloggit init <span style="color:#8f5902;font-style:italic"># 必须要首先初始化git</span>
+<p>本篇将介绍Hugo的安装、主题配置、博文操作、Github Pages部署等基本内容，以及图片、公式、代码高亮等专项配置。不全处可进一步参考<a href="https://www.gohugo.org/">Hugo中文文档</a>。</p>
 
-<span style="color:#8f5902;font-style:italic"># 从https://themes.gohugo.io/中选主题</span>
-<span style="color:#8f5902;font-style:italic"># 可以在config.toml中配置theme = &#34;xxx&#34;，也可以在编译时用-t xxx指定</span>
-<span style="color:#204a87">cd</span> themesgit clone 主题的git路径 
+<p><strong>首先需要安装Hugo</strong>：直接下载二进制可执行文件、通过包管理工具安装、源代码方式安装等方式均可，可参考<a href="https://gohugo.io/getting-started/installing/">安装链接</a>。以Windows系统、直接下载可执行文件的方式为例，我从<a href="https://github.com/gohugoio/hugo/releases">Hugo releases</a>下载了可执行文件<a href="https://github.com/gohugoio/hugo/releases/download/v0.83.0/hugo_0.83.0_Windows-64bit.zip">hugo_0.83.0_Windows-64bit.zip</a>，解压、将解压后的路径添加到环境变量即可。</p>
 
-hugo new 分类路径名/脚本文件.md <span style="color:#8f5902;font-style:italic"># 在content路径下创建一个分类路径，并在其中创建一篇博文</span>
-hugo server -t 主题名 --buildDrafts <span style="color:#8f5902;font-style:italic"># 在http://localhost:1313/下调式</span></code></pre></div>
-<p><strong>Tips</strong>：github clone太慢时，可以在gitee(码云)中导入该项目，再从gitee上clone</p>
+<p>然就可以在任意路径如<code>D:</code>中创建你的博客项目如<code>mySite</code>：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\</span><span style="color:#8f5902;font-style:italic">&gt;hugo new site mySite</span></code></pre></div>
+<p>Hugo就会创建工作路径<code>D:\mySite</code>，且生成如下文件框架：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\</span><span style="color:#8f5902;font-style:italic">&gt;cd mySite</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;tree/F</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">.</span>
+│   config.toml
+│
+├───archetypes
+│       default.md
+│
+├───content
+├───data
+├───layouts
+├───static
+└───themes</code></pre></div>
+<p><strong>接下来我们需要选择一个博客主题</strong>：在<a href="https://themes.gohugo.io/">Hugo主题库</a>中挑选并下载到<code>mySite\themes</code>中，可以下载多个，主题的文档中通常建议用git clone的方式。我个人不建议在工作根目录<code>mySite</code>下初始化git，clone到<code>mySite\theme</code>中的主题又是一个git项目，git嵌套会复杂一些。</p>
+
+<p>我建议的方式是在<code>mySite\theme</code>下初始化git并clone主题，或者在其他路径clone后复制过来，反正弄进去就行。以本博客使用的主题<a href="https://themes.gohugo.io/hugo-theme-cleanwhite">hugo-theme-cleanwhite</a>为例：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;cd themes</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\themes</span><span style="color:#8f5902;font-style:italic">&gt;git init</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\themes</span><span style="color:#8f5902;font-style:italic">&gt;git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git</span>
+<span style="color:#000;font-weight:bold">:</span> <span style="color:#f57900">国内githubclone太慢时，可以在gitee(码云)中导入该项目，再从gitee上clone</span></code></pre></div>
+<p>其实现在就可以初步查看网页效果了：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;hugo server -t hugo-theme-cleanwhite --buildDrafts</span></code></pre></div>
+<p><code>-t</code>为指定编译使用的主题，和主题文件夹名一致，运行后便会开启对<code>http://localhost:1313/</code>的监听。在浏览器中进入<code>http://localhost:1313/</code>，可以看到网页的空白模板，什么都没有：</p>
+
+<p><img src="/img/tips/2021-05-01-build-hugo/01.png" width=500/></p>
+
+<p><strong>使用主题预置素材和参数</strong>（非必须）：为了进一步美化界面，大部分主题其实都提供了包含更多素材的<code>exampleSite</code>文件夹，预置了很多图片素材和参数设置，我们直接基于它来构建和调整我们的博客是更轻松的。将<code>mySite\themes\hugo-theme-cleanwhite\exampleSite</code>中的全部内容覆盖复制到<code>mySite</code>中，鼠标复制粘贴也行：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\themes</span><span style="color:#8f5902;font-style:italic">&gt;xcopy hugo-theme-cleanwhite\exampleSite .. /E /Y</span></code></pre></div>
+<p><img src="/img/tips/2021-05-01-build-hugo/03.png" width=500/></p>
+
+<p>效果一下就丰富了，然后对<code>mySite\config.toml</code>和<code>mySite\static</code>中各类图片素材按照自己的要求进行调整即可。<code>config.toml</code>中的配置项命名很清晰，很方便配置。</p>
+
+<p><strong>接下来介绍对博文的增删改</strong>：新增命令如下，会在<code>mySite\content</code>下的<code>post</code>路径（不存在就会新建）中创建内容由<code>test.md</code>控制的博文；编辑该markdown文件即可进行写作；直接删除该文件即可删除博文。</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;hugo new post/test.md</span></code></pre></div>
+<p>Hugo新建的博文markdown文件带有front matter开头，是每篇博客重要的配置信息，可以在其中调整时间、作者等。对本博客的主题cleanwhite而言，其中的categories参数直接控制着页面的顶部栏目名。其生成模板由<code>mySite\themes\hugo-theme-cleanwhite\archetypes</code>中的模板md文件确定。</p>
+
+<p><strong>接下来介绍线上部署</strong>：我们使用Github Pages来托管网站，域名固定为username.github.io，username为你Github的用户名，自有域名也可绑定，这里暂不介绍。</p>
+
+<p>首先作部分必要的参数调整：打开配置文件<code>mySite\config.toml</code></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#000">baseurl</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;https://username.github.io&#34;</span>  <span style="color:#8f5902;font-style:italic"># username为你Github的用户名</span>
+<span style="color:#000">theme</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;hugo-theme-cleanwhite&#34;</span> <span style="color:#8f5902;font-style:italic"># 指定主题</span></code></pre></div>
+<p>本地编译：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;hugo</span></code></pre></div>
+<p>该命令会产生一个<code>mySite\public</code>路径，我们需要将这个路径推送到Github远端，他人能看到的页面全来自这个路径中的内容。在Github上新建一个名为<code>username.github.io</code>的公开库，<code>username</code>必须为你自己Github的用户名，然后在<code>mySite\public</code>路径中初始化git，添加提交后推送到远端刚建好的库：</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;cd public</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\public</span><span style="color:#8f5902;font-style:italic">&gt;git init</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\public</span><span style="color:#8f5902;font-style:italic">&gt;git add .</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\public</span><span style="color:#8f5902;font-style:italic">&gt;git commit -m &#34;myblog init&#34;</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\public</span><span style="color:#8f5902;font-style:italic">&gt;git remote add origin https://github.com/username/username.github.io.git</span>
+D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\public</span><span style="color:#8f5902;font-style:italic">&gt;git push origin master</span></code></pre></div>
+<p>等待一两分钟后就可以在<a href="https://username.github.io">https://username.github.io</a> 上看到你的页面了。</p>
+
+<hr>
+
+<p>接下来记录本主题cleanwhite下一些专项问题的解决：图片的路径和大小设置、数学公式的渲染、代码高亮的颜色。或许也可以用在某些其他主题上，仅供参考。</p>
+
+<p><strong>图片的路径</strong>：baseUrl默认为<code>mySite\static</code>，markdown中使用<code>\img\...</code>即可定位到<code>mySite\static\img</code>中的图片。</p>
+
+<p><strong>图片的大小设置</strong>：markdown的图片插入语法不支持大小和位置调整，只能使用原生html语法<code>&lt;img src=&quot;...&quot; width=... /&gt;</code>来实现此需求，但原生html会被hugo屏蔽：从 0.60 版本开始，默认的 Markdown 渲染器已经改成了 <a href="https://github.com/yuin/goldmark/">goldmark</a>，Goldmark 默认不渲染 HTML tags <a href="https://discourse.gohugo.io/t/hugo-0-60-0-raw-html-omitted-issue/22010/4">[1]</a>。在<code>mySite\config.toml</code>的<code>[markup]</code>中增加<code>defaultMarkdownHandler = &quot;blackfriday&quot;</code>可以解决这个问题 <a href="https://jdhao.github.io/2019/12/29/hugo_html_not_shown/ ">[2]</a>。</p>
+
+<p><strong>数学公式的渲染</strong>：一开始没办法显示行内公式。用mathJax解决，它是一个专门渲染数学公式的JavaScript库。</p>
+
+<p>1.在主题中的<code>themes\hugo-theme-cleanwhite\layouts\partials\footer.html</code>中插入mathJax库</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">script</span> <span style="color:#c4a000">src</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG&#34;</span><span style="color:#000;font-weight:bold">&gt;&lt;/</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span> </code></pre></div>
+<p>2.在markdown开头的front matter配置里增加 <code>markup: mmark</code>（可在<code>archetypes\default.md</code>中修改默认，也可每次在涉及到公式的markdown文件中添加）<a href="https://butui.me/post/yet-best-math-formula-support-for-hugo-with-mathjax/">[3]</a> 。实际测试发现，这和前面提到的blackfriday渲染器并不冲突。</p>
+
+<p>配置后，行间行内公式都用<code>$$...$$</code>表示，如<span  class="math">\(f(x)=x^3\)</span>。</p>
+
+<p><strong>代码高亮的颜色</strong>：默认的代码块背景色色调太深，并不喜欢，直接在<code>mySite\config.toml</code>中的<code>[markup]- [markup.highlight]</code>中调整<code>style = &quot;xxx&quot;</code>即可，参数可参照<a href="https://xyproto.github.io/splash/docs/longer/all.html">风格库</a>。</p>
 
 
                 
