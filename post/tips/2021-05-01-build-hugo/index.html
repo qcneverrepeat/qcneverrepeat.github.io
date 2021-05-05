@@ -51,7 +51,10 @@
     <link rel="stylesheet" href="/css/zanshang.css">
 
     
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <link rel="stylesheet" href="/css/all.min.css" >
+    
 
     
     
@@ -65,6 +68,9 @@
 
     
     <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script> 
 
     
     
@@ -204,11 +210,6 @@
                 post-container">
 
                 
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                
-                
                 <p>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域名也可以免费使用其支持的username.github.io作为域名。二者结合可以迅速搭建起一个精致而免费的个人博客网站。</p>
 
 <p>本篇将介绍Hugo的安装、主题配置、博文操作、Github Pages部署等基本内容，以及图片、公式、代码高亮等专项配置。不全处可进一步参考<a href="https://www.gohugo.org/">Hugo中文文档</a>。</p>
@@ -280,7 +281,7 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
 
 <p><strong>数学公式的渲染</strong>：一开始没办法显示行内公式。用mathJax解决，它是一个专门渲染数学公式的JavaScript库。</p>
 
-<p>1.在主题中的<code>themes\hugo-theme-cleanwhite\layouts\partials\footer.html</code>中插入mathJax库</p>
+<p>1.在主题中的<code>themes\hugo-theme-cleanwhite\layouts\partials\head.html</code>中插入mathJax库</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">script</span> <span style="color:#c4a000">src</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG&#34;</span><span style="color:#000;font-weight:bold">&gt;&lt;/</span><span style="color:#204a87;font-weight:bold">script</span><span style="color:#000;font-weight:bold">&gt;</span> </code></pre></div>
 <p>2.在markdown开头的front matter配置里增加 <code>markup: mmark</code>（可在<code>archetypes\default.md</code>中修改默认，也可每次在涉及到公式的markdown文件中添加）<a href="https://butui.me/post/yet-best-math-formula-support-for-hugo-with-mathjax/">[3]</a> 。实际测试发现，这和前面提到的blackfriday渲染器并不冲突。</p>
 
@@ -388,8 +389,6 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
                         
                         <li><a target="_blank" href="https://datahoe.com">数智泉</a></li>
                         
-                        <li><a target="_blank" href="https://zhuanlan.zhihu.com/qcneverrepeat">知乎专栏</a></li>
-                        
                     </ul>
                 </section>
                 
@@ -409,7 +408,7 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
                    
                    <li>
                        <a href='' rel="alternate" type="application/rss+xml" title="QianCheng Blog" >
-                           <span class="fa-stack fa-lg">
+                           <span class="fa-stack fa-lg ">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
                            </span>
@@ -429,12 +428,22 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
 
                     
                     
+
                     
 
                     
 
 		    
                     
+                    <li>
+                        <a target="_blank" href="/img/wechatQR.png">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
                     
                     <li>
                         <a target="_blank" href="https://github.com/qcneverrepeat">
@@ -480,8 +489,6 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
         </div>
     </div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script> 
 
 
 
