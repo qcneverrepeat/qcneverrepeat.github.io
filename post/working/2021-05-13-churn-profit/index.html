@@ -16,15 +16,15 @@
     
 
     
-    <meta name="title" content="读书 | 《重来也不会好过现在》" />
-    <meta property="og:title" content="读书 | 《重来也不会好过现在》" />
-    <meta property="twitter:title" content="读书 | 《重来也不会好过现在》" />
+    <meta name="title" content="流失预测的利润评估与优化" />
+    <meta property="og:title" content="流失预测的利润评估与优化" />
+    <meta property="twitter:title" content="流失预测的利润评估与优化" />
     
 
     
-    <meta name="description" content="5点应对中年危机的建议">
-    <meta property="og:description" content="5点应对中年危机的建议" />
-    <meta property="twitter:description" content="5点应对中年危机的建议" />
+    <meta name="description" content="利润评估框架、最大化利润、期望最大化利润等">
+    <meta property="og:description" content="利润评估框架、最大化利润、期望最大化利润等" />
+    <meta property="twitter:description" content="利润评估框架、最大化利润、期望最大化利润等" />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="钱诚, qiancheng, QianCheng , 钱诚的网络日志, 钱诚的博客, QianCheng Blog">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>读书 | 《重来也不会好过现在》-钱诚的博客</title>
+    <title>流失预测的利润评估与优化-钱诚的博客</title>
 
-    <link rel="canonical" href="/post/reading/2021-04-30-chonglai/">
+    <link rel="canonical" href="/post/working/2021-05-13-churn-profit/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -176,24 +176,20 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/%E5%86%A5%E6%83%B3" title="冥想">
-                            冥想
-                        </a>
-                        
-                        <a class="tag" href="/tags/%E4%B8%AD%E5%B9%B4%E5%8D%B1%E6%9C%BA" title="中年危机">
-                            中年危机
+                        <a class="tag" href="/tags/%E6%B5%81%E5%A4%B1%E9%A2%84%E6%B5%8B" title="流失预测">
+                            流失预测
                         </a>
                         
                     </div>
-                    <h1>读书 | 《重来也不会好过现在》</h1>
-                    <h2 class="subheading">中年（危机）哲学指南</h2>
+                    <h1>流失预测的利润评估与优化</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
                         
                                  &#34;QianCheng&#34;
                          
                         on 
-                        Thursday, April 30, 2020
+                        Thursday, May 13, 2021
                         
                         
                         
@@ -218,25 +214,71 @@
                 post-container">
 
                 
-                <p>这本MIT哲学教授写的小册子<em>Midlife: A Philosophical Guide</em>《中年（危机）哲学指南》，中文被译作<a href="https://book.douban.com/subject/34678463/">《重来也不会好过现在》</a>。</p>
+                <p>流失预测（Churn prediction）指识别消费者的流失倾向，并提前给予激励以提高消费者留存率的过程，通常被处理为一个概率预测或二分类的模型，其常见评价指标有精确度、AUC等。但这些评价指标和其涉及的商业利润并不完全一致，预测准一个高现金流折现用户的收益完全可能大于预测错几个普通用户的代价，用户对挽留激励的接受概率也不尽相同。流失预测的商业属性使得基于利润的评价指标意义重大。</p>
 
-<p>作为专业背景作者的半学术类著作，从工具价值和终极价值、存在主义、一直到佛教的无我观，它穿插涉及了一些哲学概念，论证严谨，并不是鸡汤或什么民科。另外，它其实混合了部分认知疗法的内容，在直接改善心理状态方面可能是有一些效果的。当然更重要的是，它流畅易懂，没有自说自话。</p>
+<p>因此，这篇文章会简单梳理流失预测几个关键的利润评估框架：Neslin 2006 的利润评估框架 <a href="http://wak2.web.rice.edu/bio/My%20Reprints/Defectiondetection.pdf">[1]</a>，Verbeke 2012 的最大利润框架 <a href="http://www.2lvw.nl/blog/wp-content/uploads/2020/05/20200514_A.05.Verbeke2012-Newinsightsintochurnpredictioninthetelecommunicationsector-aprofitdrivendataminingapproach-1.pdf">[2]</a>，Verbraken 2013 的期望最大利润框架 <a href="https://doi.org/10.1109/TKDE.2012.50">[3]</a>，以及Jahromi 2014 的个体利润优化框架 <a href="https://doi.org/10.1016/j.indmarman.2014.06.016">[4]</a>。</p>
 
-<p align="center"> <img src="/img/reading/2021-04-30-chonglai/01.jpg" width="200" /> </p>
+<p><strong>1）Neslin 2006 ：利润评估框架</strong></p>
 
-<p>全书提出了11个应对中年危机的建议，这里我把它们摘录和浓缩为5点。毕竟从23岁就开始忧虑中年危机的现象来看，我将来遭受中年危机是一件相当可能的事情。</p>
+<p><img src="/img/working/2021-05-13-churn-profit/P.png" width=600/></p>
 
-<p><strong>1.你必须关心自己之外的事物</strong>。“把追求幸福当作人生目标反而难以获得幸福，只有目标不是追求幸福，而是别的什么东西，才有可能在完成这些目标的同时，顺便找到自己的幸福”，这是约翰密尔在精神崩溃又疗愈后的心得，可以被称为利己主义悖论。这里的幸福约等于快乐，你只有对其他的事情保持热情，而不是纠结自己的快乐在哪里，才可能获得快乐。</p>
+<p>一次流失预测和挽留的过程如上图所示，客户群将会呈树状分流：<span  class="math">\(\alpha\)</span> 比例的客户被模型判定为流失，这其中有 <span  class="math">\(\beta\)</span> 比例的客户是真实的将流失者，这部分客户接受挽留激励（并留存）的比例为 <span  class="math">\(\gamma\)</span> ，默认非真实流失者会全部接受激励。整个活动与<strong>不作为</strong>相比，产生的利润为：</p>
 
-<p><strong>2.你应该为非缓和性价值的事物留出时间</strong>。缓和性价值或者说工具价值，是指一件事为达成目的的手段而具有的价值，它仅仅是在缓和某些需求：如谋生、繁衍；非缓和性价值或者说终极价值，则是指一件事自身具备的价值，它自己就可以成为目的，如亚里士多德认为的“宁静的沉思”。在我看来，对不同的个体而言，工具价值和终极价值的区分标准是不同的，甚至它不能完全割裂——每件事情都有工具价值和终极价值的不同比重。你至少应该尝试认知自己的这一套标准，尽力抓住和终极价值联系的机会。</p>
+<p><span  class="math">\[P=N\alpha [\beta \gamma (CLV-c-\delta) + \beta(1-\gamma)(-c) + (1-\beta)(-c-\delta)]-A \]</span></p>
 
-<p><strong>3.当你失落于过往的“错失”</strong>。首先，要明白即使重来一遍你做出其他的选择，也必然会有其他的“错失”；其次，人会高估选择权的价值，回望青春觉得有无限可能，但其实当时的你往往彷徨无助，选择权对于当时的你并不像现在这样可贵；再者，不要脱离了生活的细节去评估选择，人生活在细节而非抽象中，很多事物对人的意义不在于它的本质或概念，而在于它复杂精巧的质地、给人带来的充分的细节和感受。你可能认为你当年如果去学医能拯救更多人的生命，比现在困在实验室研究生物要好（抽象的比较），但其实你忽略了当下生活中无数细节带来的意义——实验成功的喜悦、甚至是操作仪器的仪式感，这些细节带来的意义可能是更值得比较的，而另一条道路上好或坏的细节你一无所知。</p>
+<p>其中，<span  class="math">\(CLV\)</span> 是客户的生命周期价值，<span  class="math">\(c\)</span> 是为发放挽留激励的产生的联系成本，比如给客户打电话等，<span  class="math">\(\delta\)</span> 是挽留激励的成本，<span  class="math">\(A\)</span> 是固定管理成本。将 <span  class="math">\(\beta\)</span> 写作 <span  class="math">\(\beta_0 \lambda\)</span> ，<span  class="math">\(\beta_0\)</span> 表示样本的流失率，<span  class="math">\(\lambda\)</span> 表示模型预测的Lift，上式：</p>
 
-<p><strong>4.当你疲于一件接一件的任务，对任务计划和结果倍感压力</strong>。你可以把注意力迁移到到它们的过程上，更具体的做法是把终结性的任务视为非终结性的过程（这一心理转变见下一点）。通常而言，一件事情能赋予你人生意义，你同样有可能在它的过程中找到意义。终结性的任务即便有反馈，意义也只存在于完成的时刻，终归容易令人厌倦空虚，而非终结性的过程则不然，你可以...一直做一直爽，现在做现在就爽。</p>
+<p><span  class="math">\[P=N \alpha \{ [\gamma CLV + \delta (1-\gamma)] \beta_0 \lambda -\delta -c \}-A\]</span></p>
 
-<p><strong>5.将注意力放在过程上并非易事，正念练习（冥想）可以提供帮助</strong>。冥想来自佛教，内观冥想（vipassnana）的目的是让人认识到“我不存在”，我只是被空间中的皮囊和时间上的生死束缚住的这副肉体，不是以自己曾以为的方式存在的，那么死亡、悲伤、执念便都被消解了。但现在的冥想意义远没有这么局限，我的理解中，这里的冥想是一种非常简单粗暴的练习，它要求你专注于自己现在每一秒最基本的状态：你的呼吸、心跳，这是对人们被计划和终结性任务占据了的大脑的强力纠正，你必须关注当下的过程。就像是对虚弱手臂的哑铃训练，你的大脑和意识也可以通过练习改变，逐渐发现非终结性过程的价值。</p>
+<p>将 <span  class="math">\(P\)</span> 对 <span  class="math">\(\lambda\)</span> 求导，得到的 <span  class="math">\(Gain\)</span> 表示模型能力提升带来的利润收益：</p>
 
-<p>概括后信息损失还是很多，原文非常精巧，几乎没有废话，推荐一读。</p>
+<p><span  class="math">\[ \partial P/\partial \lambda =Gain= N \alpha \{ [\gamma CLV + \delta (1-\gamma)] \beta_0\} \]</span></p>
+
+<p><strong>2）Verbeke 2012 ：最大利润框架MP</strong></p>
+
+<p>Neslin 2006的利润框架只是评估利润，并没有对利润做什么针对性的提高和优化。Verbeka 2012的最大利润框架在这方面做了一些工作：同样是基于1）中树图的框架，只不过将判定为流失的比例 <span  class="math">\(\alpha\)</span> 视为分类阈值 <span  class="math">\(t\)</span> 的函数 <span  class="math">\(\alpha(t)\)</span>，模型的预测Lift指标 <span  class="math">\(\lambda\)</span> 也视为 <span  class="math">\(t\)</span> 的函数 <span  class="math">\(\lambda(t)\)</span> 。利润 <span  class="math">\(P\)</span> 可以视为 <span  class="math">\(t\)</span> 的函数：</p>
+
+<p><span  class="math">\[MP=\max_{t} P(t)=\max_{t} N \cdot \alpha(t) \{ [\gamma CLV + \delta (1-\gamma)] \beta_0 \lambda(t) -\delta -c \}-A\]</span></p>
+
+<p>根据上式，可以对某一个概率预测模型进行阈值的优化，得到最佳的分类阈值 <span  class="math">\(T\)</span> 和判定比例 <span  class="math">\(\alpha(T)\)</span>：</p>
+
+<p><span  class="math">\[T=\arg \max_t P(t)\]</span></p>
+
+<p>其实将 <span  class="math">\(\alpha,\lambda\)</span> 视为 <span  class="math">\(\alpha, \lambda(\alpha)\)</span> ，然后对 <span  class="math">\(\alpha\)</span> 进行优化也可以，对于某一个给定的概率预测模型，<span  class="math">\(\alpha\)</span> 和 <span  class="math">\(t\)</span> 是一一对应的。直观地看，当模型变得宽松， <span  class="math">\(\alpha\)</span> 提高时，Lift指标 <span  class="math">\(\lambda\)</span> 会降低，<span  class="math">\(P\)</span> 作为二者的乘积通常会存在一个极大值，如下图所示，横轴为 <span  class="math">\(\alpha\)</span> 纵轴为 <span  class="math">\(P/N\)</span> ，红线处为两个模型的最大利润（最优 <span  class="math">\(\alpha\)</span>，最优 <span  class="math">\(t\)</span>）：</p>
+
+<p><img src="/img/working/2021-05-13-churn-profit/MP.png" width=600/></p>
+
+<p><strong>3）Verbraken 2013 ：期望最大利润框架EMP</strong></p>
+
+<p>Verbraken 等人认为最大利润框架还存在问题：MP中假设客户接受激励的比例 <span  class="math">\(\gamma\)</span> 是一个常数的假设太强了，我们并不知道这个比例大概是多少，为引入随机性，他们用了一个Beta分布 <span  class="math">\(h(\gamma)\)</span> 模拟 <span  class="math">\(\gamma\)</span> ，<a href="https://zhuanlan.zhihu.com/p/69606875">Beta分布</a>可以看作一个概率的概率密度分布。现在 <span  class="math">\(\gamma\)</span> 作为自变量，<span  class="math">\(MP\)</span> 可以视为 <span  class="math">\(\gamma\)</span> 的函数 <span  class="math">\(MP(\gamma)\)</span> ，每一个 <span  class="math">\(\gamma\)</span> 对应一个最优阈值 <span  class="math">\(T\)</span> 进而得到一个最大利润 <span  class="math">\(MP\)</span> 。</p>
+
+<p><span  class="math">\(MP\)</span> 对 <span  class="math">\(\gamma\)</span> 的期望即期望最大利润 <span  class="math">\(EMP\)</span>：</p>
+
+<p><span  class="math">\[EMP=\int_{\gamma} MP(\gamma) \cdot h(\gamma) d \gamma\]</span></p>
+
+<p>最优的流失判定比例 <span  class="math">\(\bar{\alpha}\)</span> 为：</p>
+
+<p><span  class="math">\[T(\gamma)=\arg \max_t P(t, \gamma)\]</span></p>
+
+<p><span  class="math">\[\bar{\alpha}=\int_{\gamma} \alpha[T(\gamma)] \cdot h(\gamma) d \gamma\]</span></p>
+
+<p><strong>4）Jahromi 2014 ：个体利润优化框架</strong></p>
+
+<p>以上几种评估框架都是基于群体的累积指标，Jahromi 2014为B2B情景提出的利润优化框架则是从个体利润出发的。</p>
+
+<p><img src="/img/working/2021-05-13-churn-profit/IP.png" width=600/></p>
+
+<p>客户 <span  class="math">\(i\)</span> 的个体利润可计算为：<span  class="math">\(\pi_i=p_i[\gamma_i(V-\delta)]+(1-p_i)[-\phi_i \delta]\)</span>。</p>
+
+<p>与Neslin 2006的利润框架不同的是，这里忽略了联系成本 <span  class="math">\(c\)</span> 和固定管理成本 <span  class="math">\(A\)</span> ，只关注客户生命周期价值 <span  class="math">\(V\)</span>和激励成本 <span  class="math">\(\delta\)</span>。同时，树状图的分支代表概率而不是比例，<span  class="math">\(p_i\)</span> 为分类器给客户 <span  class="math">\(i\)</span> 计算出的流失概率，<span  class="math">\(\gamma_i, \phi_i\)</span> 分别表示真实流失者和非真实流失者接受激励的概率。它没有像1）中一样默认 <span  class="math">\(\phi_i\)</span> 为1，而是给出了更完整的考虑，因为当激励形式为打折券等时，这些激励不一定会被全部客户兑现。在原文中 <span  class="math">\(\gamma_i, \phi_i\)</span> 被设为了常数，不过我认为它也可以用Beta分布来进行拓展。</p>
+
+<p>这一框架和以上几种的另一个重要区别在于，它不是根据概率和分类阈值来决策，而是基于每个个体的利润来得出决策。它将所有客户的个体利润进行排序，选出其中利润为正的个体（<span  class="math">\( I=\{i | \pi_i > 0\} \)</span>）进行挽留，产生的利润为：</p>
+
+<p><span  class="math">\[ Profit=\sum_{I} \pi_i \]</span></p>
+
+<h6 id="参考文献">参考文献</h6>
+
+<p>[1] Neslin, Scott A., et al. &quot;Defection detection: Measuring and understanding the predictive accuracy of customer churn models.&quot; Journal of marketing research 43.2 (2006): 204-211. <br/>[2] Verbeke, Wouter, et al. &quot;New insights into churn prediction in the telecommunication sector: A profit driven data mining approach.&quot; <em>European journal of operational research</em> 218.1 (2012): 211-229.<br/>[3] Verbraken, Thomas, Wouter Verbeke, and Bart Baesens. &quot;A novel profit maximizing metric for measuring classification performance of customer churn prediction models.&quot; <em>IEEE transactions on knowledge and data engineering</em> 25.5 (2012): 961-973.<br/>[4] Jahromi, Ali Tamaddoni, Stanislav Stakhovych, and Michael Ewing. &quot;Managing B2B customer churn, retention and profitability.&quot; <em>Industrial Marketing Management</em> 43.7 (2014): 1258-1268.</p>
 
 
                 
@@ -284,11 +326,11 @@
                 <hr>
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/post/tips/2021-05-01-build-hugo/" data-toggle="tooltip" data-placement="top" title="Hugo&#43;Github Pages博客搭建">Next
-                            Post &rarr;</a>
+                    <li class="previous">
+                        <a href="/post/reading/2021-05-04-climate/" data-toggle="tooltip" data-placement="top" title="读书 |《气候经济与人类未来》">&larr;
+                            Previous Post</a>
                     </li>
+                    
                     
                 </ul>
 

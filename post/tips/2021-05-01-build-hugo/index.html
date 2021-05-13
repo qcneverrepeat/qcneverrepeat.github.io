@@ -110,6 +110,10 @@
                             <a href="/categories/tips">tips</a>
                         </li>
                         
+                        <li>
+                            <a href="/categories/working">working</a>
+                        </li>
+                        
                     
                     
 		    
@@ -210,7 +214,7 @@
                 post-container">
 
                 
-                <p>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域名也可以免费使用其支持的username.github.io作为域名。二者结合可以迅速搭建起一个精致而免费的个人博客网站。</p>
+                <p>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域名也可以免费使用其支持的username.github.io作为域名。二者结合可以迅速搭建起一个精致且免费的个人博客网站。</p>
 
 <p>本篇将介绍Hugo的安装、主题配置、博文操作、Github Pages部署等基本内容，以及图片、公式、代码高亮等专项配置。不全处可进一步参考<a href="https://www.gohugo.org/">Hugo中文文档</a>。</p>
 
@@ -241,15 +245,15 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
 <span style="color:#000;font-weight:bold">:</span> <span style="color:#f57900">国内githubclone太慢时，可以在gitee(码云)中导入该项目，再从gitee上clone</span></code></pre></div>
 <p>其实现在就可以初步查看网页效果了：</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;hugo server -t hugo-theme-cleanwhite --buildDrafts</span></code></pre></div>
-<p><code>-t</code>为指定编译使用的主题，和主题文件夹名一致，运行后便会开启对<code>http://localhost:1313/</code>的监听。在浏览器中进入<code>http://localhost:1313/</code>，可以看到网页的空白模板，什么都没有：</p>
+<p><code>-t</code>为指定编译使用的主题，和主题文件夹名一致，运行后便会开启对<code>http://localhost:1313/</code>的监听。在浏览器中进入<code>http://localhost:1313/</code>，可以看到该主题的空白模板，什么都没有：</p>
 
 <p><img src="/img/tips/2021-05-01-build-hugo/01.png" width=500/></p>
 
-<p><strong>使用主题预置素材和参数</strong>（非必须）：为了进一步美化界面，大部分主题其实都提供了包含更多素材的<code>exampleSite</code>文件夹，预置了很多图片素材和参数设置，我们直接基于它来构建和调整我们的博客是更轻松的。将<code>mySite\themes\hugo-theme-cleanwhite\exampleSite</code>中的全部内容覆盖复制到<code>mySite</code>中，鼠标复制粘贴也行：</p>
+<p><strong>使用主题预置素材和参数</strong>（非必须）：为了进一步美化界面，大部分主题其实都提供了包含更多素材的<code>exampleSite</code>文件夹，预置了很多图片素材和参数设置，我们直接基于它来构建和调整我们的博客是更轻松的。将<code>mySite\themes\hugo-theme-cleanwhite\exampleSite</code>中的全部内容覆盖复制到<code>mySite</code>中，用鼠标也行：</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite\themes</span><span style="color:#8f5902;font-style:italic">&gt;xcopy hugo-theme-cleanwhite\exampleSite .. /E /Y</span></code></pre></div>
 <p><img src="/img/tips/2021-05-01-build-hugo/03.png" width=500/></p>
 
-<p>效果一下就丰富了，然后对<code>mySite\config.toml</code>和<code>mySite\static</code>中各类图片素材按照自己的要求进行调整即可。<code>config.toml</code>中的配置项命名很清晰，很方便配置。</p>
+<p>再运行前面提到的<code>hugo server</code>命令查看，效果一下就丰富了，然后对<code>mySite\config.toml</code>和<code>mySite\static</code>中各类图片素材按照自己的要求进行调整即可。<code>config.toml</code>中的配置项命名很清晰，很方便配置。</p>
 
 <p><strong>接下来介绍对博文的增删改</strong>：新增命令如下，会在<code>mySite\content</code>下的<code>post</code>路径（不存在就会新建）中创建内容由<code>test.md</code>控制的博文；编辑该markdown文件即可进行写作；直接删除该文件即可删除博文。</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\mySite</span><span style="color:#8f5902;font-style:italic">&gt;hugo new post/test.md</span></code></pre></div>
@@ -366,6 +370,8 @@ D<span style="color:#000;font-weight:bold">:</span><span style="color:#f57900">\
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                        
                         
                         
                         
