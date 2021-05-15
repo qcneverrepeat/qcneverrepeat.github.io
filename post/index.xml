@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on QianCheng Blog</title>
-    <link>https://qcneverrepeat.github.io/post/</link>
+    <link>https://qcneverrepeat.com/post/</link>
     <description>Recent content in Posts on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>流失预测的利润评估与优化</title>
-      <link>https://qcneverrepeat.github.io/post/working/2021-05-13-churn-profit/</link>
+      <link>https://qcneverrepeat.com/post/working/2021-05-13-churn-profit/</link>
       <pubDate>Thu, 13 May 2021 14:28:45 +0800</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/working/2021-05-13-churn-profit/</guid>
+      <guid>https://qcneverrepeat.com/post/working/2021-05-13-churn-profit/</guid>
       <description>流失预测（Churn prediction）指识别消费者的流失倾向，并提前给予激励以提高消费者留存率的过程，通常被处理为一个概率预测或二分类的</description>
     </item>
     
     <item>
       <title>读书 |《气候经济与人类未来》</title>
-      <link>https://qcneverrepeat.github.io/post/reading/2021-05-04-climate/</link>
+      <link>https://qcneverrepeat.com/post/reading/2021-05-04-climate/</link>
       <pubDate>Tue, 04 May 2021 23:01:28 +0800</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/reading/2021-05-04-climate/</guid>
+      <guid>https://qcneverrepeat.com/post/reading/2021-05-04-climate/</guid>
       <description>《气候经济与人类未来》是本今年4月份出版的新书，读的过程中还在实验室跟朋友们讨论过十四五规划里的碳中和，所以最近对气候议题很有兴趣。这是本由</description>
     </item>
     
     <item>
       <title>Hugo&#43;Github Pages博客搭建</title>
-      <link>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</link>
+      <link>https://qcneverrepeat.com/post/tips/2021-05-01-build-hugo/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</guid>
+      <guid>https://qcneverrepeat.com/post/tips/2021-05-01-build-hugo/</guid>
       <description>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域</description>
     </item>
     
     <item>
       <title>读书 | 《重来也不会好过现在》</title>
-      <link>https://qcneverrepeat.github.io/post/reading/2021-04-30-chonglai/</link>
+      <link>https://qcneverrepeat.com/post/reading/2021-04-30-chonglai/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/reading/2021-04-30-chonglai/</guid>
+      <guid>https://qcneverrepeat.com/post/reading/2021-04-30-chonglai/</guid>
       <description>这本MIT哲学教授写的小册子Midlife: A Philosophical Guide《中年（危机）哲学指南》，中文被译作《重来也不会好过现在》。 作为专业背景作者的半学</description>
     </item>
     

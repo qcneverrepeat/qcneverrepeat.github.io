@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>写作 on QianCheng Blog</title>
-    <link>https://qcneverrepeat.github.io/tags/%E5%86%99%E4%BD%9C/</link>
+    <link>https://qcneverrepeat.com/tags/%E5%86%99%E4%BD%9C/</link>
     <description>Recent content in 写作 on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://qcneverrepeat.github.io/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://qcneverrepeat.com/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo&#43;Github Pages博客搭建</title>
-      <link>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</link>
+      <link>https://qcneverrepeat.com/post/tips/2021-05-01-build-hugo/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/tips/2021-05-01-build-hugo/</guid>
+      <guid>https://qcneverrepeat.com/post/tips/2021-05-01-build-hugo/</guid>
       <description>Hugo（雨果）是一个Go语言编写的网页创建框架，速度快，主题非常丰富。GitHub Pages是一个免费的静态站点，可以绑定自己的域名，无域</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>流失预测 on QianCheng Blog</title>
-    <link>https://qcneverrepeat.github.io/tags/%E6%B5%81%E5%A4%B1%E9%A2%84%E6%B5%8B/</link>
+    <link>https://qcneverrepeat.com/tags/%E6%B5%81%E5%A4%B1%E9%A2%84%E6%B5%8B/</link>
     <description>Recent content in 流失预测 on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.github.io/tags/%E6%B5%81%E5%A4%B1%E9%A2%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.com/tags/%E6%B5%81%E5%A4%B1%E9%A2%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>流失预测的利润评估与优化</title>
-      <link>https://qcneverrepeat.github.io/post/working/2021-05-13-churn-profit/</link>
+      <link>https://qcneverrepeat.com/post/working/2021-05-13-churn-profit/</link>
       <pubDate>Thu, 13 May 2021 14:28:45 +0800</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/post/working/2021-05-13-churn-profit/</guid>
+      <guid>https://qcneverrepeat.com/post/working/2021-05-13-churn-profit/</guid>
       <description>流失预测（Churn prediction）指识别消费者的流失倾向，并提前给予激励以提高消费者留存率的过程，通常被处理为一个概率预测或二分类的</description>
     </item>
     

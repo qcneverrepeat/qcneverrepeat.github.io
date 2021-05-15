@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on QianCheng Blog</title>
-    <link>https://qcneverrepeat.github.io/categories/</link>
+    <link>https://qcneverrepeat.com/categories/</link>
     <description>Recent content in Categories on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 14:28:45 +0800</lastBuildDate><atom:link href="https://qcneverrepeat.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working</title>
-      <link>https://qcneverrepeat.github.io/categories/working/</link>
+      <link>https://qcneverrepeat.com/categories/working/</link>
       <pubDate>Thu, 13 May 2021 14:28:45 +0800</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/categories/working/</guid>
+      <guid>https://qcneverrepeat.com/categories/working/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reading</title>
-      <link>https://qcneverrepeat.github.io/categories/reading/</link>
+      <link>https://qcneverrepeat.com/categories/reading/</link>
       <pubDate>Tue, 04 May 2021 23:01:28 +0800</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/categories/reading/</guid>
+      <guid>https://qcneverrepeat.com/categories/reading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tips</title>
-      <link>https://qcneverrepeat.github.io/categories/tips/</link>
+      <link>https://qcneverrepeat.com/categories/tips/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/categories/tips/</guid>
+      <guid>https://qcneverrepeat.com/categories/tips/</guid>
       <description></description>
     </item>
     

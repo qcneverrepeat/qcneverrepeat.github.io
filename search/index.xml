@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Searches on QianCheng Blog</title>
-    <link>https://qcneverrepeat.github.io/search/</link>
+    <link>https://qcneverrepeat.com/search/</link>
     <description>Recent content in Searches on QianCheng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://qcneverrepeat.github.io/search/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://qcneverrepeat.com/search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://qcneverrepeat.github.io/search/placeholder/</link>
+      <link>https://qcneverrepeat.com/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://qcneverrepeat.github.io/search/placeholder/</guid>
+      <guid>https://qcneverrepeat.com/search/placeholder/</guid>
       <description></description>
     </item>
     
